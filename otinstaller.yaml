@@ -20,7 +20,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/ipwhois@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/ipwhois@sha256:15fc236f48de7c810c172c8f1d7e306c926935c2e49b2ba7dcbb179f44864c9c
   platforms: [linux/amd64, linux/arm64]
   command: ["ipwhois-rdap", "--json", "--addr", "{ip}"]
   output_format: json
